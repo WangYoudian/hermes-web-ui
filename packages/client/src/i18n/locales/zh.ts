@@ -62,6 +62,8 @@ export default {
     confirm: '确定',
     expand: '展开',
     collapse: '收起',
+    on: '开',
+    off: '关',
     start: '启动',
     stop: '停止',
   },
@@ -205,6 +207,10 @@ export default {
     resumeSpeech: '继续',
     stopSpeech: '停止',
     speechNotSupported: '此浏览器不支持语音播放',
+    speechError: '语音播放失败：{reason}',
+    speechErrorNotAllowed: '请先与页面交互以启用语音播放',
+    speechErrorAudioBusy: '音频系统正忙，请重试',
+    speechErrorSynthesis: '语音合成失败',
   },
 
   // 定时任务

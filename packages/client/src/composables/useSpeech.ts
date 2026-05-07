@@ -6,6 +6,7 @@ export interface SpeechOptions {
   volume?: number    // 音量 0-1，默认 1
   voice?: SpeechSynthesisVoice | null
   lang?: string      // 语言 'zh-CN', 'en-US' 等
+  onError?: (error: string) => void  // 播放失败回调
 }
 
 export interface SpeechState {
@@ -206,6 +207,9 @@ export function useSpeech() {
       state.value.isPlaying = false
       state.value.isPaused = false
       state.value.currentMessageId = null
+      if (options.onError) {
+        options.onError(event.error || 'unknown')
+      }
     }
 
     // 开始播放

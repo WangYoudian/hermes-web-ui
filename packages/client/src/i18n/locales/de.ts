@@ -62,6 +62,8 @@ export default {
     confirm: 'Bestatigen',
     expand: 'Aufklappen',
     collapse: 'Zuklappen',
+    on: 'Ein',
+    off: 'Aus',
   },
 
   // Sidebar
@@ -117,6 +119,7 @@ export default {
     emptyState: 'Starten Sie eine Konversation mit Hermes Agent',
     inputPlaceholder: 'Nachricht eingeben... (Enter zum Senden, Shift+Enter fur neue Zeile)',
     attachFiles: 'Dateien anhangen',
+    autoPlaySpeech: 'Sprachausgabe automatisch abspielen',
     stop: 'Stopp',
     send: 'Senden',
     contextUsed: 'Kontext verwendet:',
@@ -175,6 +178,10 @@ export default {
     resumeSpeech: 'Fortsetzen',
     stopSpeech: 'Stoppen',
     speechNotSupported: 'Sprachwiedergabe in diesem Browser nicht unterstützt',
+    speechError: 'Sprachwiedergabe fehlgeschlagen: {reason}',
+    speechErrorNotAllowed: 'Bitte interagieren Sie zuerst mit der Seite',
+    speechErrorAudioBusy: 'Audiogerät ist belegt, bitte erneut versuchen',
+    speechErrorSynthesis: 'Sprachsynthese fehlgeschlagen',
   },
 
   // Jobs

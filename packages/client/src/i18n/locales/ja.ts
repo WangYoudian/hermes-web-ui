@@ -62,6 +62,8 @@ export default {
     confirm: '確認',
     expand: '展開',
     collapse: '折りたたむ',
+    on: 'オン',
+    off: 'オフ',
   },
 
   // サイドバー
@@ -117,6 +119,7 @@ export default {
     emptyState: 'Hermes Agent と会話を開始しましょう',
     inputPlaceholder: 'メッセージを入力... (Enter で送信、Shift+Enter で改行)',
     attachFiles: 'ファイルを添付',
+    autoPlaySpeech: '音声を自動再生',
     stop: '停止',
     send: '送信',
     contextUsed: 'コンテキスト使用量:',
@@ -175,6 +178,10 @@ export default {
     resumeSpeech: '再開',
     stopSpeech: '停止',
     speechNotSupported: 'このブラウザは音声読み上げをサポートしていません',
+    speechError: '音声再生に失敗しました：{reason}',
+    speechErrorNotAllowed: 'ページを操作してから音声再生を有効にしてください',
+    speechErrorAudioBusy: 'オーディオシステムがビジーです。再試行してください',
+    speechErrorSynthesis: '音声合成に失敗しました',
   },
 
   // スケジュールジョブ

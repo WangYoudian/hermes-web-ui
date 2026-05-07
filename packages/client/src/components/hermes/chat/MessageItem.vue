@@ -365,6 +365,20 @@ const isPausedThisMessage = computed(() => {
   return speech.currentMessageId.value === props.message.id && speech.isPaused.value;
 });
 
+function getSpeechErrorMsg(error: string): string {
+  switch (error) {
+    case 'not-allowed':
+      return t('chat.speechErrorNotAllowed')
+    case 'audio-busy':
+      return t('chat.speechErrorAudioBusy')
+    case 'synthesis-failed':
+    case 'synthesis-unavailable':
+      return t('chat.speechErrorSynthesis')
+    default:
+      return t('chat.speechError', { reason: error })
+  }
+}
+
 function handleSpeechToggle() {
   if (!canPlaySpeech.value) {
     return
@@ -398,6 +412,9 @@ function handleSpeechToggle() {
     pitch: 0.5,   // 低沉
     rate: 1.2,    // 快速
     voice: maleVoice || undefined, // 使用男声，如果没有就用默认
+    onError: (error) => {
+      toast.error(getSpeechErrorMsg(error))
+    },
   })
 }
 

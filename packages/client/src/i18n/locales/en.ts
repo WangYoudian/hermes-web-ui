@@ -62,6 +62,8 @@ export default {
     confirm: 'Confirm',
     expand: 'Expand',
     collapse: 'Collapse',
+    on: 'On',
+    off: 'Off',
     start: 'Start',
     stop: 'Stop',
   },
@@ -205,6 +207,10 @@ export default {
     resumeSpeech: 'Resume',
     stopSpeech: 'Stop',
     speechNotSupported: 'Voice playback not supported in this browser',
+    speechError: 'Voice playback failed: {reason}',
+    speechErrorNotAllowed: 'Please interact with the page first to enable voice playback',
+    speechErrorAudioBusy: 'Audio system is busy, please try again',
+    speechErrorSynthesis: 'Voice synthesis failed',
   },
 
   // Jobs

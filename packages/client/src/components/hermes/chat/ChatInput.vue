@@ -279,11 +279,16 @@ function isImage(type: string): boolean {
           </template>
           {{ t('chat.autoPlaySpeech') }}
         </NTooltip>
-        <NSwitch
-          size="small"
-          v-model:value="autoPlaySpeech"
-          :round="false"
-        />
+        <NTooltip trigger="hover">
+          <template #trigger>
+            <NSwitch
+              size="small"
+              v-model:value="autoPlaySpeech"
+              :round="false"
+            />
+          </template>
+          {{ autoPlaySpeech ? t('common.off') : t('common.on') }}
+        </NTooltip>
       </div>
 
       <span v-if="totalTokens > 0" class="context-info" :class="{ 'context-warning': usagePercent > 80 }">

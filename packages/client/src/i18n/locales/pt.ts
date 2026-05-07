@@ -62,6 +62,8 @@ export default {
     confirm: 'Confirmar',
     expand: 'Expandir',
     collapse: 'Recolher',
+    on: 'Ligado',
+    off: 'Desligado',
   },
 
   // Sidebar
@@ -117,6 +119,7 @@ export default {
     emptyState: 'Inicie uma conversa com o Hermes Agent',
     inputPlaceholder: 'Digite uma mensagem... (Enter para enviar, Shift+Enter para nova linha)',
     attachFiles: 'Anexar arquivos',
+    autoPlaySpeech: 'Reproduzir voz automaticamente',
     stop: 'Parar',
     send: 'Enviar',
     contextUsed: 'Contexto utilizado:',
@@ -175,6 +178,10 @@ export default {
     resumeSpeech: 'Retomar',
     stopSpeech: 'Parar',
     speechNotSupported: 'Reprodução de voz não suportada neste navegador',
+    speechError: 'Falha na reprodução de voz: {reason}',
+    speechErrorNotAllowed: 'Interaja com a página primeiro para ativar a voz',
+    speechErrorAudioBusy: 'Sistema de áudio ocupado, tente novamente',
+    speechErrorSynthesis: 'Síntese de voz falhou',
   },
 
   // Jobs

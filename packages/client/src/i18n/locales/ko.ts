@@ -62,6 +62,8 @@ export default {
     confirm: '확인',
     expand: '펼치기',
     collapse: '접기',
+    on: '켜기',
+    off: '끄기',
   },
 
   // 사이드바
@@ -117,6 +119,7 @@ export default {
     emptyState: 'Hermes Agent와 대화를 시작하세요',
     inputPlaceholder: '메시지를 입력하세요... (Enter로 전송, Shift+Enter로 줄바꿈)',
     attachFiles: '파일 첨부',
+    autoPlaySpeech: '음성 자동 재생',
     stop: '중지',
     send: '전송',
     contextUsed: '사용된 컨텍스트:',
@@ -175,6 +178,10 @@ export default {
     resumeSpeech: '재개',
     stopSpeech: '중지',
     speechNotSupported: '이 브라우저는 음성 재생을 지원하지 않습니다',
+    speechError: '음성 재생 실패: {reason}',
+    speechErrorNotAllowed: '페이지와 상호작용하여 음성 재생을 활성화하세요',
+    speechErrorAudioBusy: '오디오 시스템이 사용 중입니다. 다시 시도하세요',
+    speechErrorSynthesis: '음성 합성 실패',
   },
 
   // 예약 작업
